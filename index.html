@@ -5240,7 +5240,7 @@ Bitcoin.ECKey = (function () {
 	ECKey.isWalletImportFormat = function (key) {
 		key = key.toString();
 		return (ECKey.privateKeyPrefix == 0xb2) ?
-							(/^7[123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]{50}$/.test(key)) :
+							(/^6[123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]{50}$/.test(key)) :
 							(/^9[123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]{50}$/.test(key));
 	};
 
@@ -8471,8 +8471,8 @@ if (ninja.getQueryString()["testnet"] == "true" || ninja.getQueryString()["testn
 	document.getElementById("testnet").style.display = "block";
 	document.getElementById("detailwifprefix").innerHTML = "'9'";
 	document.getElementById("detailcompwifprefix").innerHTML = "'c'";
-	Bitcoin.Address.networkVersion = 0x6F; // testnet
-	Bitcoin.ECKey.privateKeyPrefix = 0xEF; // testnet
+	Bitcoin.Address.networkVersion = 0x6F; // testnet 0x6f
+	Bitcoin.ECKey.privateKeyPrefix = 0xEF; // testnet 0xef
 	ninja.testnetMode = true;
 }
 // if users does not move mouse after random amount of time then generate the key anyway.
