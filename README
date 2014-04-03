@@ -4,7 +4,10 @@ JavaScript Client-Side Machinecoin Wallet Generator
 Now Machinecoin addresses and their corresponding private key can be conveniently 
 generated in a web browser.
 
-The Machinecoin Paperwallet project is a fork of the bitaddress.org project located at:
+The Machinecoin Paperwallet project is a fork of the liteaddress.org project located at:
+https://github.com/litecoin-project/liteaddress.org
+which itself 
+is a fork of the bitaddress.org project located at:
 https://github.com/pointbiz/bitaddress.org
 
 The Machinecoin Paperwallet project provides an all-in-one HTML document with embedded
