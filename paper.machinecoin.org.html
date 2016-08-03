@@ -6634,7 +6634,8 @@ input[type=checkbox] { position: relative; z-index: 20; }
 	<div id="main">
 		<div id="culturemenu">
             <div class="culturemenurow">
-                <span><a href="?culture=en" id="cultureen" class="selected" onclick="ninja.translator.translate('en'); return false;">English</a></span>
+                <span><a href="?culture=en" id="cultureen" class="selected" onclick="ninja.translator.translate('en'); return false;">English</a></span> |
+                <span><a href="?culture=de" id="culturede" onclick="ninja.translator.translate('de'); return false;">Deutsch</a></span>
             </div>
 		</div>
 		<img alt="paper.machinecoin.org" title="paper.machinecoin.org" id="logo"  src="data:image/png;base64,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" />
@@ -7913,6 +7914,172 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		}
 	};
 })(ninja);
+(function (translator) {
+	translator.translations["de"] = {
+		// javascript alerts or messages
+		"testneteditionactivated": "TESTNET AKTIVIERT",
+		"paperlabelbitcoinaddress": "Machinecoin-Adresse:",
+		"paperlabelprivatekey": "Privater Schl&uuml;ssel:",
+		"paperlabelencryptedkey": "Verschl&uuml;sselter privater Schl&uuml;ssel (Passwort ben&ouml;tigt)",
+		"bulkgeneratingaddresses": "Adressen erstellen... ",
+		"brainalertpassphrasetooshort": "Die eingegebene Passphrase ist zu kurz.\n\n",
+		"brainalertpassphrasewarning": "Hinweis: Eine längere Passphrase schützt besser vor Brute-Force-Attacken, bei denen auf gut Glück Passphrasen probiert werden.",
+		"brainalertpassphrasedoesnotmatch": "Die beiden Passphrasen stimmen nicht überein.",
+		"detailalertnotvalidprivatekey": "Der eingegebene Text ist kein gültiger privater Schlüssel.",
+		"detailconfirmsha256": "Der eingegebene Text ist kein gültiger privater Schlüssel!\n\nMöchtest du den eingegebenen Text als Passphrase verwenden, um mithilfe dessen SHA256-Hash einen privaten Schlüssel zu erstellen?\n\nHinweis: Eine längere Passphrase sch&uuml;tzt besser vor Brute-Force-Attacken, bei denen auf gut Glück Passphrasen probiert werden.",
+		"bip38alertincorrectpassphrase": "Falsches Passwort",
+		"bip38alertpassphraserequired": "Bitte Passwort eingeben.",
+		"vanityinvalidinputcouldnotcombinekeys": "Unzulässige Eingaben. Die Schlüssel konnten nicht kombiniert werden.",
+		"vanityalertinvalidinputpublickeysmatch": "Unzulässige Eingaben. Die eingegebenen öffentlichen Schlüssel stimmen überein. Bitte gib zwei unterschiedliche Schlüssel ein.",
+		"vanityalertinvalidinputcannotmultiple": "Unzulässige Eingaben. Zwei öffentliche Schlüssel können nicht miteinander multipliziert werden. Wähle \"Addieren\" aus, um aus zwei öffentlichen Schlüsseln eine Machinecoin-Adresse zu erstellen.",
+		"vanityprivatekeyonlyavailable": "Nur verfügbar, wenn zwei private Schlüssel kombiniert werden.",
+		"vanityalertinvalidinputprivatekeysmatch": "Unzulässige Eingaben. Die eingegebenen privaten Schlüssel stimmen überein. Bitte gib zwei unterschiedliche Schlüssel ein.",
+
+		// header and menu html
+		"tagline": "Offener, client-seitiger Machinecoin-Wallet-Generator in JavaScript",
+		"generatelabelbitcoinaddress": "Erstelle Machinecoin-Wallet...",
+		"generatelabelmovemouse": "Bewege deine Maus umher, um die Zuf&auml;lligkeit zu erh&ouml;hen...",
+		"generatelabelkeypress": "OR type some random characters into this textbox", //TODO: please translate
+		"singlewallet": "Einzelnes Wallet",
+		"paperwallet": "Papier-Wallet",
+		"bulkwallet": "Massen-Wallet",
+		"brainwallet": "Kopf-Wallet",
+		"vanitywallet": "Personalisiertes Wallet",
+		"splitwallet": "Split Wallet", //TODO: please translate
+		"detailwallet": "Walletdetails",
+
+		// footer html
+		"footerlabeldonations": "Spenden:",
+		"footerlabeltranslatedby": "&Uuml;bersetzung: 1EWPcmYmU8MamRUYMFWQa1r7A2Tskz78t5",
+		"footerlabelpgp": "PGP",
+		"footerlabelversion": "Versionsgeschichte",
+		"footerlabelgithub": "GitHub-Repository",
+		"footerlabelgithubzip": "zip",
+		"footerlabelsig": "sig",
+		"footerlabelcopyright1": "Copyright paper.machinecoin.org.",
+		"footerlabelcopyright2": "JavaScript-Copyrights sind im Quelltext enthalten.",
+		"footerlabelnowarranty": "Ohne Gew&auml;hr.",
+
+		// status html
+		"statuslabelcryptogood": "&#10004; Good!", //TODO: please translate
+		"statuslabelcryptogood1": "Your browser can generate cryptographically random keys using window.crypto.getRandomValues", //TODO: please translate
+		"statusokcryptogood": "OK", //TODO: please translate
+		"statuslabelcryptobad": "&times; Oh no!", //TODO: please translate
+		"statuslabelcryptobad1": "Your browser does NOT support window.crypto.getRandomValues. You should use a more modern browser with this generator to increase the security of the keys generated.",
+		"statusokcryptobad": "OK", //TODO: please translate
+		"statuslabelunittestsgood": "&#10004; Good!", //TODO: please translate
+		"statuslabelunittestsgood1": "All synchronous unit tests passed.", //TODO: please translate
+		"statusokunittestsgood": "OK", //TODO: please translate
+		"statuslabelunittestsbad": "&times; Oh no!", //TODO: please translate
+		"statuslabelunittestsbad1": "Some synchronous unit tests DID NOT pass. You should find another browser to use with this generator.", //TODO: please translate
+		"statusokunittestsbad": "OK", //TODO: please translate
+		"statuslabelprotocolgood": "&#10004; Good!", //TODO: please translate
+		"statuslabelprotocolgood1": "You are running this generator from your local computer. <br />Tip: Double check you are offline by trying ", //TODO: please translate
+		"statusokprotocolgood": "OK", //TODO: please translate
+		"statuslabelprotocolbad": "&#9888; Think twice!", //TODO: please translate
+		"statuslabelprotocolbad1": "You appear to be running this generator online from a live website. For valuable wallets it is recommended to", //TODO: please translate
+		"statuslabelprotocolbad2": "download", //TODO: please translate
+		"statuslabelprotocolbad3": "the zip file from GitHub and run this generator offline as a local html file.", //TODO: please translate
+		"statusokprotocolbad": "OK", //TODO: please translate
+		"statuslabelkeypool1": "This is a log of all the Machinecoin Addresses and Private Keys you generated during your current session. Reloading the page will create a new session.", //TODO: please translate
+		"statuskeypoolrefresh": "Refresh", //TODO: please translate
+		"statusokkeypool": "OK", //TODO: please translate
+
+		// single wallet html
+		"newaddress": "Neues Wallet erstellen",
+		"singleprint": "Drucken",
+		"singlelabelbitcoinaddress": "Machinecoin-Adresse",
+		"singlelabelprivatekey": "Privater Schl&uuml;ssel (WIF &ndash; zum Importieren geeignet):",
+		"singletip1": "<b>Ein Machinecoin-Wallet </b>(Geldb&ouml;rse) ist nichts anderes als eine Machinecoin-Adresse (&ouml;ffentlicher Schl&uuml;ssel) und der zu ihr geh&ouml;rende private Schl&uuml;ssel. Oben findest du ein solches, gerade f&uuml;r dich erstelltes Wallet, bestehend aus den beiden Zeichenketten. Die QR-Codes dienen lediglich der Vereinfachung und enthalten kodiert die Adresse bzw. den privaten Schl&uuml;ssel.",
+		"singletip2": "<b>Um dieses Wallet zu sch&uuml;tzen,</b> musst du es entweder ausdrucken oder anderweitig die Machinecoin-Adresse und den privaten Schl&uuml;ssel sichern. Fertige auf jeden Fall eine Kopie des privaten Schl&uuml;ssels an und bewahre sie an einem sicheren Ort auf. Der private Schl&uuml;ssel liegt nur lokal auf deinem Rechner vor und wurde nicht ins Internet &uuml;bertragen. Falls du dich mit PGP auskennst, kannst du dir diese all-in-one HTML-Seite herunterladen. Um zu &uuml;berpr&uuml;fen, ob die heruntergeladene Version authentisch ist, kannst du den SHA256-Hash dieser Seite mit dem SHA256-Hash in der signierten Versionsgeschichte am unteren Ende dieser Seite abgleichen. Wenn du diese Seite verl&auml;sst, sie neul&auml;dst bzw. den \"Neues Wallet erstellen\"-Button dr&uuml;ckst, wird ein neues Wallet erstellt und das vorherige wird nicht mehr abrufbar sein. Du solltest deinen privaten Schl&uuml;ssel geheim halten. Wer den privaten Schl&uuml;ssel hat, kann damit auf alle im Wallet befindlichen Machinecoin zugreifen und sie nach Belieben ausgeben. Behandle dein gedrucktes Wallet wie echtes Geld!",
+		"singletip3": "Du kannst <b>Guthaben</b> zu deinem Wallet <b>hinzuf&uuml;gen</b>, indem du genau wie bei anderen &Uuml;berweisungen Machinecoins an die Machinecoin-Adresse deines Wallets schickst.",
+		"singletip4": "<b>&Uuml;berpr&uuml;fe dein Guthaben,</b> indem du deine Machinecoin-Adresse auf blockchain.info bzw. blockexplorer.com eingibst.",
+		"singletip5": "Du kannst deine <b>Machinecoins ausgeben</b>, indem du das gesamte mit deinem privaten Schl&uuml;ssel verbundene Guthaben auf deinen Account bei blockchain.info &uuml;bertr&auml;gst. Alternativ kannst du dir ein Machinecoinprogramm herunterladen und deinen privaten Schl&uuml;ssel in dieses importieren. Beachte dabei aber, dass, sobald du Machinecoins mit dem Programm sendest, dein privater Schl&uuml;ssel mit den anderen privaten Schl&uuml;sseln, die vom Programm bereitgestellt werden, verbunden wird. Bei einer &Uuml;berweisung wird etwas R&uuml;ckgeld an eine der Machinecoin-Adressen des Programms geschickt. Deswegen musst du, um tats&auml;chlich dein gesamtes Guthaben zu sichern, ein Backup vom gesamten Wallet des Programms, das nun auch deinen importierten privaten Schl&uuml;ssel enth&auml;lt, anfertigen. Satoshi r&auml;t, dass man unter keinen Umst&auml;nden ein Wallet l&ouml;schen sollte.",
+		"singleshare": "SHARE", //TODO: please translate
+		"singlesecret": "SECRET", //TODO: please translate
+
+		// paper wallet html
+		"paperlabelhideart": "Grafische Gestaltung ausblenden?",
+		"paperlabeladdressesperpage": "Adressen je Seite:",
+		"paperlabeladdressestogenerate": "Anzahl zu erstellender Adressen:",
+		"papergenerate": "Erstellen",
+		"paperprint": "Drucken",
+		"paperlabelBIPpassphrase": "Passwort:",
+		"paperlabelencrypt": "Mit BIP38 verschl&uuml;sseln?",
+
+		// bulk wallet html
+		"bulklabelstartindex": "Startindex:",
+		"bulklabelrowstogenerate": "Zu erstellende Adressen:",
+		"bulklabelcompressed": "Adressen komprimieren?",
+		"bulkgenerate": "Erstellen",
+		"bulkprint": "Drucken",
+		"bulklabelcsv": "Comma Separated Values (CSV):",
+		"bulklabelformat": "Index, Adresse, privater Schl&uuml;ssel (WIF)",
+		"bulklabelq1": "Warum sollte ich ein Massen-Wallet auf meiner Webseite einsetzen?",
+		"bulka1": "Bisher musste immer der offizielle Machinecoin-Daemon, machinecoind, auf dem Server installiert sein, damit man Machinecoins auf seiner Webseite annehmen konnte. Viele Webhoster blockieren die Installation von machinecoind. Au&szlig;erdem m&uuml;ssen die privaten Schl&uuml;ssel auf dem Server liegen, damit machinecoind funktioniert, obwohl sie dort einfacher gestohlen werden k&ouml;nnen. Mit einem Massen-Wallet brauchst du nur noch die Machinecoin-Adressen und nicht mehr zus&auml;tzlich die privaten Schl&uuml;ssel hochladen. Dadurch musst du dir keine Sorgen mehr machen, dass dein Machinecoin-Wallet gestohlen werden k&ouml;nnte, wenn unberechtigt in deinen Server eingedrungen wird.",
+		"bulklabelq2": "Wie kann ich ein Massen-Wallet in meine Webseite integrieren?",
+		"bulklabela2li1": "Erstelle mithilfe dieser Seite ganz viele Machinecoin-Adressen (10.000+). Kopiere die CSV-Liste in eine sichere Textdatei auf deinem Computer. Fertige ein Backup dieser Datei an und speichere sie an einem sicheren Ort.",
+		"bulklabela2li2": "Importiere die Machinecoin-Adressen in eine Datenbank auf deinem Server. (Lege nur die Machinecoin-Adressen, nicht aber die privaten Schl&uuml;ssel auf deinem Server ab!)",
+		"bulklabela2li3": "Biete deinen Kunden auf deiner Webseite Machinecoin als Zahlungsm&ouml;glichkeit an. Wenn ein Kunde mit Machinecoin zahlen m&ouml;chte, zeige ihm eine der Adressen aus deiner Datenbank als Zahlungsadresse an und speichere sie mit seiner Bestellung.",
+		"bulklabela2li4": "Jetzt musst du dir den Zahlungseingang best&auml;tigen lassen. Google \"machinecoin payment notification\" und melde dich bei mindestens einem solchen Anbieter an. Es gibt verschiedene Anbieter, die dich via Web, API, SMS, E-Mail etc. &uuml;ber erfolgte Transaktionen informieren k&ouml;nnen. Sobald du die Eingangsbest&auml;tigung erh&auml;lst, kannst du automatisch die Bestellung abwickeln lassen. Um selber zu schauen, ob eine Zahlung erfolgt ist, kannst du Block Explorer nutzen. Ersetze MACHINECOINADRESSE durch die Machinecoin-Adresse, die du pr&uuml;fen m&ouml;chtest. Es dauert von zehn Minuten bis zu einer Stunde, um Transaktionen zu best&auml;tigen. <br />http://explorer.machinecoin.org/address/MACHINECOINADRESSE<br /> <br />Unbest&auml;tigte Transaktionen findest du hier: http://blockchain.info/ <br /> S&auml;mtliche Transaktionen sollten dort innerhalb von 30 Sekunden auftauchen.",
+		"bulklabela2li5": "Deine Machinecoins werden sicher in die Block-Chain aufgenommen. Mithilfe des urspr&uuml;nglichen Wallets vom ersten Schritt kannst du sie ausgeben.",
+
+		// brain wallet html
+		"brainlabelenterpassphrase": "Passphrase eingeben:",
+		"brainlabelshow": "Aufdecken?",
+		"brainprint": "Drucken",
+		"brainlabelconfirm": "Passphrase wiederholen:",
+		"brainview": "Zugehöriges Wallet anzeigen",
+		"brainalgorithm": "Algorithmus: SHA256 (Passphrase)",
+		"brainlabelbitcoinaddress": "Machinecoin-Adresse:",
+		"brainlabelprivatekey": "Privater Schl&uuml;ssel (WIF):",
+
+		// vanity wallet html
+		"vanitylabelstep1": "Schritt 1 - Erstelle dein Schl&uuml;sselpaar",
+		"vanitynewkeypair": "Erstellen",
+		"vanitylabelstep1publickey": "&Ouml;ffentlicher Schl&uuml;ssel:",
+		"vanitylabelstep1pubnotes": "Kopiere den obigen &ouml;ffentlichen Schl&uuml;ssel in das \"Your public key\"-Feld auf der Webseite von Vanity Pool.",
+		"vanitylabelstep1privatekey": "Privater Schl&uuml;ssel (Your Part Private Key):",
+		"vanitylabelstep1privnotes": "Speichere den obigen privaten Schl&uuml;ssel in einer Textdatei, die du am besten auf einem verschl&uuml;sselten Laufwerk sicherst. Sobald der Vanity-Pool deine personalisierte Machinecoin-Adresse gefunden hat, kannst du den zu ihr geh&ouml;renden privaten Schl&uuml;ssel nur mithilfe des vom Pools berechneten privaten Schl&uuml;ssels (Pool Part Private Key) und des obigen privaten Schl&uuml;ssels (Your Part Private Key) erhalten. Beide privaten Schl&uuml;ssel (Pool und Your) werden zum Berechnen des privaten Schl&uuml;ssels deiner personalisierten Machinecoin-Adresse ben&ouml;tigt, damit wirklich nur jemand, der beide besitzt, das personalisierte Wallet nutzen kann.",
+		"vanitylabelstep2calculateyourvanitywallet": "Schritt 2 - Berechne dein personalisiertes Wallet",
+		"vanitylabelenteryourpart": "Gib hier deinen privaten Schl&uuml;ssel von oben ein (Your Part Private Key):",
+		"vanitylabelenteryourpoolpart": "Gib hier den von Vanity-Pool erhaltenen privaten Schl&uuml;ssel ein (Pool Part Private Key):",
+		"vanitylabelnote1": "[HINWEIS: Dieses Eingabefeld nimmt sowohl &ouml;ffentlich als auch private Schl&uuml;ssel an.]",
+		"vanitylabelnote2": "[HINWEIS: Dieses Eingabefeld nimmt sowohl &ouml;ffentlich als auch private Schl&uuml;ssel an.]",
+		"vanitylabelradioadd": "Addieren",
+		"vanitylabelradiomultiply": "Multiplizieren",
+		"vanitycalc": "Personalisiertes Wallet berechnen",
+		"vanitylabelbitcoinaddress": "Personalisierte Machinecoin-Adresse:",
+		"vanitylabelnotesbitcoinaddress": "Die obige Machinecoin-Adresse sollte den gew&uuml;nschten Pr&auml;fix enthalten.",
+		"vanitylabelpublickeyhex": "Personalisierter &ouml;ffentlicher Schl&uuml;ssel (HEX):",
+		"vanitylabelnotespublickeyhex": "Die obige Zeichenfolge ist der &ouml;ffentliche Schl&uuml;ssel (Machinecoin-Adresse) im Hexadezimalformat.",
+		"vanitylabelprivatekey": "Personalisierter privater Schl&uuml;ssel (WIF):",
+		"vanitylabelnotesprivatekey": "Der obige private Schl&uuml;ssel erm&ouml;glicht das Importieren in andere Wallets.",
+
+		// detail wallet html
+		"detaillabelenterprivatekey": "Privaten Schl&uuml;ssel eingeben:",
+		"detailkeyformats": "Unterstützte Formate: WIF, WIFC, HEX, B64, B6, MINI, BIP38",
+		"detailview": "Details anzeigen",
+		"detailprint": "Drucken",
+		"detaillabelnote1": "Der private Schl&uuml;ssel deines Wallets ist eine geheime, einzigartige Zeichenfolge, die nur du kennst. Er kann auf mehrer Arten dargestellt werden. Unten findest du die zugeh&ouml;rige Machinecoin-Adresse bzw. &ouml;ffentlichen Schl&uuml;ssel sowie den privaten Schl&uuml;ssel in den verbreitetsten Formaten.",
+		"detaillabelnote2": "Ab Version 0.6 speichert Machinecoin-qt &ouml;ffentliche Schl&uuml;ssel komprimiert. Das Programm unterst&uuml;tzt nun auch den Import und Export von privaten Schl&uuml;sseln mit importprivkey/dumpprivkey. Das Format des exportierten privaten Schl&uuml;ssels h&auml;ngt davon ab, ob die Adresse in einem alten oder neuen Wallet erstellt wurde.",
+		"detaillabelbitcoinaddress": "Machinecoin-Adresse:",
+		"detaillabelbitcoinaddresscomp": "Komprimierte Machinecoin-Adresse:",
+		"detaillabelpublickey": "&Ouml;ffentlicher Schl&uuml;ssel (130 Zeichen [0-9A-F]):",
+		"detaillabelpublickeycomp": "Komprimierter &ouml;ffentlicher Schl&uuml;ssel (66 Zeichen [0-9A-F]):",
+		"detaillabelprivwif": "Privater Schl&uuml;ssel WIF  <br /> 51 Zeichen in base58, beginnt mit",
+		"detaillabelprivwifcomp": "Komprimierter privater Schl&uuml;ssel WIF <br /> 52 Zeichen in base58, beginnt mit",
+		"detailcompwifprefix": "'K' oder 'L'",
+		"detaillabelprivhex": "Privater Schl&uuml;ssel in Hexadezimal (64 Zeichen [0-9A-F]):",
+		"detaillabelprivb64": "Privater Schl&uuml;ssel in base64 (44 Zeichen):",
+		"detaillabelprivmini": "Privater Schl&uuml;ssel in mini (22, 26 oder 30 Zeichen, beginnt mit 'S'):",
+		"detaillabelpassphrase": "Passwort f&uuml;r BIP38 eingeben",
+		"detailbip38decryptbutton": "Entschl&uuml;sseln",
+		"detailbip38encryptbutton": "Encrypt BIP38", //TODO: please translate
+		"detaillabelq1": "Wie erstelle ich ein Wallet mithilfe eines Würfels? Was versteht man unter B6?",
+		"detaila1": "Beim Erstellen eines Machinecoin-Wallets sollten die dafür genutzten Zufallszahlen auch tatsächlich zufällig sein. Ein echter Würfel liefert wesentlich zufälligere Zahlen als ein Computer. Um einen privaten Schlüssel zu erstellen, sind lediglich 99 Würfe mit einem normalen Würfel nötig. Nach jedem Wurf solltest du die Augenzahl nach folgendem Muster aufschreiben: 1-\>1, 2-\>2, 3-\>3, 4-\>4, 5-\>5, 6-\>0. Die so entstandene Zufallszahl stellt deinen privaten Schlüssel in B6 bzw. zur Basis 6 dar. Diesen 99 Zeichen langen Basis-6-Schlüssel kannst du im obigen Eingabefeld eingeben und dir dann die zugehörigen Details anzeigen lassen. U.a. wird dir die zu deinem privaten Schlüssel gehörende Machinecoin-Adresse angezeigt. Es wäre ratsam, sich die ebenfalls berechnete WIF-Version des privaten Schlüssels zu notieren, weil sie häufiger genutzt wird."
+	};
+})(ninja.translator);
 	</script>
 	<script type="text/javascript">
 (function (wallets, qrCode) {
@@ -7920,6 +8087,7 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		isOpen: function () {
 			return (document.getElementById("singlewallet").className.indexOf("selected") != -1);
 		},
+
 		open: function () {
 			if (document.getElementById("btcaddress").innerHTML == "") {
 				single.generateNewAddressAndKey();
@@ -8231,7 +8399,7 @@ ninja.wallets.paperwallet = {
 
 		close: function () {
 			document.getElementById("bulkarea").style.display = "none";
-		}
+		},
 
 		// use this function to bulk generate addresses
 		// rowLimit: number of Bitcoin Addresses to generate
