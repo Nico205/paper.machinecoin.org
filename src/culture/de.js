@@ -2,7 +2,7 @@
 	translator.translations["de"] = {
 		// javascript alerts or messages
 		"testneteditionactivated": "TESTNET AKTIVIERT",
-		"paperlabelbitcoinaddress": "Bitcoin-Adresse:",
+		"paperlabelbitcoinaddress": "Machinecoin-Adresse:",
 		"paperlabelprivatekey": "Privater Schl&uuml;ssel:",
 		"paperlabelencryptedkey": "Verschl&uuml;sselter privater Schl&uuml;ssel (Passwort ben&ouml;tigt)",
 		"bulkgeneratingaddresses": "Adressen erstellen... ",
@@ -15,13 +15,13 @@
 		"bip38alertpassphraserequired": "Bitte Passwort eingeben.",
 		"vanityinvalidinputcouldnotcombinekeys": "Unzulässige Eingaben. Die Schlüssel konnten nicht kombiniert werden.",
 		"vanityalertinvalidinputpublickeysmatch": "Unzulässige Eingaben. Die eingegebenen öffentlichen Schlüssel stimmen überein. Bitte gib zwei unterschiedliche Schlüssel ein.",
-		"vanityalertinvalidinputcannotmultiple": "Unzulässige Eingaben. Zwei öffentliche Schlüssel können nicht miteinander multipliziert werden. Wähle \"Addieren\" aus, um aus zwei öffentlichen Schlüsseln eine Bitcoin-Adresse zu erstellen.",
+		"vanityalertinvalidinputcannotmultiple": "Unzulässige Eingaben. Zwei öffentliche Schlüssel können nicht miteinander multipliziert werden. Wähle \"Addieren\" aus, um aus zwei öffentlichen Schlüsseln eine Machinecoin-Adresse zu erstellen.",
 		"vanityprivatekeyonlyavailable": "Nur verfügbar, wenn zwei private Schlüssel kombiniert werden.",
 		"vanityalertinvalidinputprivatekeysmatch": "Unzulässige Eingaben. Die eingegebenen privaten Schlüssel stimmen überein. Bitte gib zwei unterschiedliche Schlüssel ein.",
 
 		// header and menu html
-		"tagline": "Offener, client-seitiger Bitcoin-Wallet-Generator in JavaScript",
-		"generatelabelbitcoinaddress": "Erstelle Bitcoin-Wallet...",
+		"tagline": "Offener, client-seitiger Machinecoin-Wallet-Generator in JavaScript",
+		"generatelabelbitcoinaddress": "Erstelle Machinecoin-Wallet...",
 		"generatelabelmovemouse": "Bewege deine Maus umher, um die Zuf&auml;lligkeit zu erh&ouml;hen...",
 		"generatelabelkeypress": "OR type some random characters into this textbox", //TODO: please translate
 		"singlewallet": "Einzelnes Wallet",
@@ -34,40 +34,40 @@
 
 		// footer html
 		"footerlabeldonations": "Spenden:",
-		"footerlabeltranslatedby": "&Uuml;bersetzung: 1EWPcmYmU8MamRUYMFWQa1r7A2Tskz78t5",
+		"footerlabeltranslatedby": "&Uuml;bersetzung: MDSQf1PSdrpTBE8GGV4ydhAqq9z5AbMDAw",
 		"footerlabelpgp": "PGP",
 		"footerlabelversion": "Versionsgeschichte",
 		"footerlabelgithub": "GitHub-Repository",
 		"footerlabelgithubzip": "zip",
 		"footerlabelsig": "sig",
-		"footerlabelcopyright1": "Copyright bitaddress.org.",
+		"footerlabelcopyright1": "Copyright paper.machinecoin.org.",
 		"footerlabelcopyright2": "JavaScript-Copyrights sind im Quelltext enthalten.",
 		"footerlabelnowarranty": "Ohne Gew&auml;hr.",
 
 		// status html
-		"statuslabelcryptogood": "&#10004; Good!", //TODO: please translate
+		"statuslabelcryptogood": "&#10004; Gut!",
 		"statuslabelcryptogood1": "Your browser can generate cryptographically random keys using window.crypto.getRandomValues", //TODO: please translate
-		"statusokcryptogood": "OK", //TODO: please translate
-		"statuslabelcryptobad": "&times; Oh no!", //TODO: please translate
+		"statusokcryptogood": "OK",
+		"statuslabelcryptobad": "&times; Oh nein!",
 		"statuslabelcryptobad1": "Your browser does NOT support window.crypto.getRandomValues. You should use a more modern browser with this generator to increase the security of the keys generated.",
-		"statusokcryptobad": "OK", //TODO: please translate
-		"statuslabelunittestsgood": "&#10004; Good!", //TODO: please translate
+		"statusokcryptobad": "OK",
+		"statuslabelunittestsgood": "&#10004; Gut!",
 		"statuslabelunittestsgood1": "All synchronous unit tests passed.", //TODO: please translate
-		"statusokunittestsgood": "OK", //TODO: please translate
-		"statuslabelunittestsbad": "&times; Oh no!", //TODO: please translate
+		"statusokunittestsgood": "OK",
+		"statuslabelunittestsbad": "&times; Oh nein!",
 		"statuslabelunittestsbad1": "Some synchronous unit tests DID NOT pass. You should find another browser to use with this generator.", //TODO: please translate
-		"statusokunittestsbad": "OK", //TODO: please translate
-		"statuslabelprotocolgood": "&#10004; Good!", //TODO: please translate
+		"statusokunittestsbad": "OK",
+		"statuslabelprotocolgood": "&#10004; Gut!",
 		"statuslabelprotocolgood1": "You are running this generator from your local computer. <br />Tip: Double check you are offline by trying ", //TODO: please translate
-		"statusokprotocolgood": "OK", //TODO: please translate
+		"statusokprotocolgood": "OK",
 		"statuslabelprotocolbad": "&#9888; Think twice!", //TODO: please translate
 		"statuslabelprotocolbad1": "You appear to be running this generator online from a live website. For valuable wallets it is recommended to", //TODO: please translate
 		"statuslabelprotocolbad2": "download", //TODO: please translate
 		"statuslabelprotocolbad3": "the zip file from GitHub and run this generator offline as a local html file.", //TODO: please translate
-		"statusokprotocolbad": "OK", //TODO: please translate
+		"statusokprotocolbad": "OK",
 		"statuslabelkeypool1": "This is a log of all the Bitcoin Addresses and Private Keys you generated during your current session. Reloading the page will create a new session.", //TODO: please translate
-		"statuskeypoolrefresh": "Refresh", //TODO: please translate
-		"statusokkeypool": "OK", //TODO: please translate
+		"statuskeypoolrefresh": "Aktualisieren",
+		"statusokkeypool": "OK",
 
 		// single wallet html
 		"newaddress": "Neues Wallet erstellen",
