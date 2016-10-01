@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Steampunk;
+    src: url(font.ttf);
+}
+
+html, body {
+	
+}
+
+body {
+	font-family: Steampunk !important;
+	letter-spacing: 2px !important;
+}
+
+#logo {
+	margin-top: 30px !important;
+	margin-bottom: 10px !important;
+}
+.menu {
+	margin-top: 40px !important;
+	background: radial-gradient(circle, rgb(243, 246, 225), rgb(247, 240, 212), rgb(236, 211, 170)) !important;
+	border-width: 6px 6px 0px 6px !important;
+	border-color: #514B3F !important;
+	border-style: double !important;
+	border-radius: 0px !important;
+	
+	box-shadow: 1px 1px 5px black;
+}
+#generate {
+	background: radial-gradient(circle, rgb(243, 246, 225), rgb(247, 240, 212), rgb(236, 211, 170)) !important;
+	border-width: 2px 6px 6px 6px !important;
+	border-color: #514B3F !important;
+	border-style: double !important;
+	border-top-style: dashed !important;
+	border-radius: 0px !important;
+	
+	box-shadow: 1px 1px 5px black;
+}
+#wallets {
+	display: none;
+	background: radial-gradient(circle, rgb(243, 246, 225), rgb(247, 240, 212), rgb(236, 211, 170)) !important;
+	border-width: 2px 6px 6px 6px !important;
+	border-color: #514B3F !important;
+	border-style: double !important;
+	border-top-style: dashed !important;
+	border-radius: 0px !important;
+	
+	box-shadow: 1px 1px 5px black;
+}
+.copyright {
+	margin-top: 120px !important;
+}
+
+.menu .tab.selected {
+    background-color: #F1DAB1 !important;
+    color: black !important;
+    border: 1px dashed #514B3D !important;
+	border-radius: 0px !important;
+}
+.menu .tab:hover {
+    background-color: #4A4333 !important;
+    border-radius: 0px !important;
+	color: white !important;
+}
+#paperkeyarea {
+	letter-spacing: 0px !important;
+	font-family: Arial !important;
+}
+.paper .commands {
+	border: 0px solid black !important;
+}
+.walletarea {
+	border: 0px solid black !important;
+}
+.commands {
+	border-bottom: 0px solid black !important;
+}
+#singlesafety {
+	border-top: 0px solid black !important;
+}

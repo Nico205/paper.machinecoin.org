@@ -48,6 +48,8 @@
 
 	<title>paper.machinecoin.org</title>
 	<meta charset="utf-8">
+	
+	<link rel="stylesheet" href="./style.css">
 
 	<script type="text/javascript">
 // Array.prototype.map function is in the public domain.
@@ -7517,6 +7519,8 @@ ninja.publicKey = {
 			ninja.tab.select(walletType)
 		}
 		document.getElementById("generate").style.display = "none";
+		var walletID = document.getElementById("wallets");
+		walletID.setAttribute('style', 'display:block !important');
 		// update labels for dependent wallets
 		var culture = (ninja.getQueryString()["culture"] == null ? "en" : ninja.getQueryString()["culture"]);
 		ninja.translator.translate(culture);
@@ -9876,8 +9880,8 @@ ninja.wallets.paperwallet = {
 		}
 	},
 
-	batch: function () {
-		if (ninja.wallets.paperwallet.remaining > 0) {
+	batch: function () {		
+		if (ninja.wallets.paperwallet.remaining > 0) {		
 			var paperArea = document.getElementById("paperkeyarea");
 			ninja.wallets.paperwallet.count++;
 			var i = ninja.wallets.paperwallet.count;
